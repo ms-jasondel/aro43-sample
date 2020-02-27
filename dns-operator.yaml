@@ -1,0 +1,14 @@
+apiVersion: operator.openshift.io/v1
+kind: DNS
+metadata:
+  finalizers:
+  - dns.operator.openshift.io/dns-controller
+  name: default
+spec:
+  servers:
+  - forwardPlugin:
+      upstreams:
+      - 192.168.100.10
+    name: nhlbi.gov
+    zones:
+    - nhlbi.gov
