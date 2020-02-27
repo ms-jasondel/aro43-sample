@@ -1,5 +1,7 @@
 # How to configure DNS Operator in OpenShift 4.3:
 # https://docs.openshift.com/container-platform/4.3/networking/dns-operator.html
+# oc get dns.operator/default -o yaml
+# oc edit dns.operator/default
 apiVersion: operator.openshift.io/v1
 kind: DNS
 metadata:
