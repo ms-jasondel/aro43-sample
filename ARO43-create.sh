@@ -28,7 +28,7 @@ az network vnet subnet update \
 az aro create \
   -g "$RESOURCEGROUP" \
   -n "$CLUSTER" \
-  --vnet dev-vnet \
+  --vnet "dev-vnet" \
   --master-subnet "$CLUSTER-master" \
   --worker-subnet "$CLUSTER-worker" \
   --apiserver-visibility Private \
